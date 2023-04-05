@@ -1,0 +1,27 @@
+body {
+    background-color: #0d0627;
+}
+h1, h2, h3, p, a{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section {
+    height: 100lvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 3px 5px cyan;
+}
+a:active {
+    transform: translate(4px, 3px);
+    box-shadow: 0 0 6px black inset;
+}
