@@ -22,13 +22,26 @@
         <a href="#" onclick="switchPage('enigme1')">Commencer</a>
     </div>
     <div class="section little" id="enigme1">
-        <h1 class="ontop">•••••• - •••••• - ••••••</h1>
+        <h1 id="top">•••••• - •••••• - ••••••</h1>
         <p><i>“Cherche dans ma chambre l’objet que tu déteste le plus, lui seul pourra t’aider”</i></p>
         <div>
             <input type="text" id="input" autocomplete="off" autofocus onclick="findInput()">
             <span id="validator">👀</span>
         </div>
+        <a id="next" style="visibility: hidden;" href="#" onclick="switchPage('enigme2')">Continuer 🚀</a>
     </div>
-    <script>switchPage("enigme1")</script>
+    <div class="section little" id="enigme2">
+        <h1 id="top">4H7JF - •••••• - ••••••</h1>
+        
+    </div>
+    <div class="section little" id="enigme3">
+        <h1 id="top">4H7JF - •••••• - ••••••</h1>
+        
+    </div>
+    <div class="section little" id="felicitations">
+        <h1 id="top">4H7JF - •••••• - ••••••</h1>
+
+    </div>
+    <script>switchPage("accueil")</script>
 </body>
 </html>
