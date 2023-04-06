@@ -1,12 +1,20 @@
 body {
     background-color: #0d0627;
     margin: 0;
-    overflow: hidden;
 }
 h1, h2, h3, p, a{
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+}
+h1 {
+    font-size: x-large;
+}
+h2{
+    font-size: large;
+}
+i {
+    font-size: 3.9vw;
 }
 i {
     color: #949494;
@@ -45,4 +53,15 @@ input {
 }
 span {
     font-size: 2em;
+}
+.next {
+    visibility: hidden;
+    margin-top: 20%;
+}
+.tada {
+    justify-content: start;
+    background-image: url("./tada.gif");
+    height: 100svh;
+    background-size: cover;
+    background-position: center;
 }

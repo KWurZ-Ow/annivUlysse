@@ -11,37 +11,62 @@
 </head>
 <body>
     <div class="section" id="accueil">
-        <h1>Hé, bon anniversaire !</h1>
+        <h1>Hé ! bon anniversaire !</h1>
         <p>Mais c'est fou ça, c'est ton anniversaire 🎉</p>
-        <a href="#" onclick="switchPage('intro')">Clique pour voir ton cadeau 🎁</a>
+        <a href="#" onclick="switchPage(1)">Clique pour voir ton cadeau 🎁</a>
+        <a href="#" onclick="switchPage(5)">dev skip 4</a>
     </div>
+
+
     <div class="section" id="intro">
         <h1>Hum, une énigme... 🤔</h1>
         <p>T'a cru que t'allais t'en tirer comme ça !</p>
         <p><i>"Pour obtenir ton cadeau tu devra<br> trouver ce code en trois parties :<br> •••••• - •••••• - ••••••"</i></p>
-        <a href="#" onclick="switchPage('enigme1')">Commencer</a>
+        <a href="#" onclick="switchPage(2)">Commencer</a>
     </div>
+
+
     <div class="section little" id="enigme1">
-        <h1 id="top">•••••• - •••••• - ••••••</h1>
+        <h1 id="top2">•••••• - •••••• - ••••••</h1>
+        <p><i>“euh, fut encore que je trouve l'énigme mais<br> c'est quatre haches et sept jambon fromage”</i></p>
+        <div>
+            <input type="text" id="input2" autocomplete="off" autofocus onclick="findInput()">
+            <span id="validator2">👀</span>
+        </div>
+        <a class="next" id="next2" href="#" onclick="switchPage(3)">Continuer 🚀</a>
+    </div>
+
+
+    <div class="section little" id="enigme2">
+        <h1 id="top3">4H7JF - •••••• - ••••••</h1>
         <p><i>“Cherche dans ma chambre l’objet que tu déteste le plus, lui seul pourra t’aider”</i></p>
         <div>
-            <input type="text" id="input" autocomplete="off" autofocus onclick="findInput()">
-            <span id="validator">👀</span>
+            <input type="text" id="input3" autocomplete="off" autofocus onclick="findInput()">
+            <span id="validator3">👀</span>
         </div>
-        <a id="next" style="visibility: hidden;" href="#" onclick="switchPage('enigme2')">Continuer 🚀</a>
+        <a class="next" id="next3" href="#" onclick="switchPage(4)">Continuer 🚀</a>
     </div>
-    <div class="section little" id="enigme2">
-        <h1 id="top">4H7JF - •••••• - ••••••</h1>
-        
-    </div>
-    <div class="section little" id="enigme3">
-        <h1 id="top">4H7JF - •••••• - ••••••</h1>
-        
-    </div>
-    <div class="section little" id="felicitations">
-        <h1 id="top">4H7JF - •••••• - ••••••</h1>
 
+
+    <div class="section little" id="enigme3">
+        <h1 id="top4">4H7JF - 8NN7C - ••••••</h1>
+        <p><i id="clue">“Question divertissement : En six lettres, quelle émission, créée le 5 Mars 2013, présente du contenu en rapport 
+            avec les jeux vidéos et est financée par une communauté secrète appellée les ‘Jeans Maçons’ ?“</i></p>
+        <div>
+            <input type="text" id="input4" autocomplete="off" autofocus onclick="findInput()">
+            <span id="validator4">👀</span>
+        </div>
+        <a class="next" id="next4" href="#" onclick="switchPage(5)">Continuer 🚀</a>
     </div>
-    <script>switchPage("accueil")</script>
+
+
+    <div class="section little" id="felicitations">
+        <h1 id="top">4H7JF - 8NN7C - VBH0W</h1>
+        <h2>Bravo ! Tu a réussi<br> il ne te reste plus qu'a résoudre l'énigme finale</h2>
+        <p><i>“Démarre ta machine infernale et enclenche la Vapeur”<br>
+            ”Dans les abysses, à l’Ouest, tu trouvera une croix”<br>
+            ”Devant le choix qui s'offrira à toi, le second, tu choisira”</i></p>
+    </div>
+    <script>switchPage(0)</script>
 </body>
 </html>
