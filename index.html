@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <title>Bon anniv' !</title>
 </head>
 <body>
-    <div class="section">
-        <h1>Hé bon anniversaire !</h1>
-        <p>Mais c'est fou ça, c'est ton anniversaire</p>
-        <a href="#">Clique pour voir ton cadeau</a>
+    <div class="section" id="accueil">
+        <h1>Hé, bon anniversaire !</h1>
+        <p>Mais c'est fou ça, c'est ton anniversaire 🎉</p>
+        <a href="#" onclick="switchPage('intro')">Clique pour voir ton cadeau 🎁</a>
     </div>
+    <div class="section" id="intro">
+        <h1>Hum, une énigme... 🤔</h1>
+        <p>T'a cru que t'allais t'en tirer comme ça !</p>
+        <p><i>"Pour obtenir ton cadeau tu devra<br> trouver ce code en trois parties :<br> •••••• - •••••• - ••••••"</i></p>
+        <a href="#" onclick="switchPage('enigme1')">Commencer</a>
+    </div>
+    <div class="section little" id="enigme1">
+        <h1 class="ontop">•••••• - •••••• - ••••••</h1>
+        <p><i>“Cherche dans ma chambre l’objet que tu déteste le plus, lui seul pourra t’aider”</i></p>
+        <div>
+            <input type="text" id="input" autocomplete="off" autofocus onclick="findInput()">
+            <span id="validator">👀</span>
+        </div>
+    </div>
+    <script>switchPage("enigme1")</script>
 </body>
 </html>
