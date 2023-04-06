@@ -14,7 +14,7 @@ h2{
     font-size: large;
 }
 i {
-    font-size: 3.9vw;
+    font-size: small
 }
 i {
     color: #949494;
@@ -46,7 +46,7 @@ a:active {
     box-shadow: 0 0 6px cyan inset;
 }
 input {
-    width: 3.5em;
+    width: 3.8em;
     font-size: 2em;
     text-align: center;
     border-radius: 5px;
